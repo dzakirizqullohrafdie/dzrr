@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MahasiswaController;
+use App\Http\Controllers\HomeController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -32,4 +33,5 @@ Route::get('/about', function () {
 Route::get('/matakuliah/show/{param1?}', function($param1 =''){
     return 'Anda mengakses mata kuliah: '.$param1;
 });
-    
+
+Route::get('/home', [HomeController::class, 'index']);
