@@ -166,15 +166,15 @@
                             @csrf
                             <div class="mb-3">
                                 <label for="nama" class="form-label">Nama</label>
-                                <input type="text" class="form-control" $request->nama>
+                                <input type="text" class="form-control" name="nama">
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email</label>
-                                <input type="text" class="form-control" $request->email>
+                                <input type="text" class="form-control" name="email">
                             </div>
                             <div class="mb-3">
                                 <label for="pertanyaan" class="form-label">Pertanyaan</label>
-                                <textarea class="form-control" rows="4" $request->pertanyaan></textarea>
+                                <textarea class="form-control" rows="4" name="pertanyaan"></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary">Kirim Pertanyaan</button>
                         </form>
